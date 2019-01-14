@@ -1,0 +1,4 @@
+﻿  ImTypeCast.cpp
+c:\users\goka\documents\visual studio 2017\projects\imtypecast\imtypecast.cpp(39): error C2664: 'void TestFunc(const CTestData &)': 인수 1을(를) 'int'에서 'const CTestData &'(으)로 변환할 수 없습니다.
+  c:\users\goka\documents\visual studio 2017\projects\imtypecast\imtypecast.cpp(39): note: 원인: 'int'에서 'const CTestData'(으)로 변환할 수 없습니다.
+  c:\users\goka\documents\visual studio 2017\projects\imtypecast\imtypecast.cpp(39): note: class 'CTestData'의 생성자가 'explicit'으로 선언되었습니다.
