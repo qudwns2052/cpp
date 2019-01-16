@@ -17,10 +17,24 @@ public:
 	
 	operator int() { return *m_pnData; }
 
-	void operator=(const CMyData &rhs)
+	CMyData& operator=(const CMyData &rhs)
 	{
+		if (this == &rhs)
+			return *this;
 		delete m_pnData;
 		m_pnData = new int(*rhs.m_pnData);
+	}
+
+	CMyData& operator+=(const CMyData &rhs)
+	{
+		int *pnNewData = new int(*m_pnData);
+
+		*pnNewData += *rhs.m_pnData;
+
+		delete m_pnData;
+		m_pnData = pnNewData;
+
+		return *this;
 	}
 };
 
