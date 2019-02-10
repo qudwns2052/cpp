@@ -1,0 +1,4 @@
+﻿  7.cpp
+c:\users\goka\documents\visual studio 2017\projects\cpp\bemon_question_7\7.cpp(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: 'strcpy' 선언을 참조하십시오.
+  bemon_question_7.vcxproj -> C:\Users\GOKA\Documents\Visual Studio 2017\Projects\cpp\bemon_question_7\Debug\bemon_question_7.exe
