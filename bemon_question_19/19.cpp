@@ -12,10 +12,7 @@ public:
 		this->title = title; this->price = price; 	this->pages = pages;
 	}
 
-	bool operator<(Book & rhs)
-	{
-
-	}
+	friend bool operator<(Book book, Book rhs);
 
 	void show() 
 	{
@@ -23,6 +20,15 @@ public:
 	}
 	string getTitle() { return title; }
 };
+
+bool operator<(Book book, Book rhs)
+{
+	if (book.title.compare(rhs.title) < 0)
+		return true;
+	else
+		return false;
+}
+
 
 int main() 
 {
